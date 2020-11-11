@@ -3,6 +3,7 @@
 Since the dataset provides answers of classes, supervised learning is a better suite.
 
 <strong> 1. Random Forest</strong>
+
 Initial Model:<br>
 We started with a Random Forest Model which got a score of 0.8753 with n_estimator=200. Next we used feature_importances_ on the first random forest model we built and to see if there are any features we can remove that will improve our model score. Feature Importance is best for tree models. 
 
@@ -13,6 +14,7 @@ Grid Search:<br>
 Using Grid search to fine tune max_features and n_estimators, the score is not better than initial choice auto and 200. Thus, we keep model rf (n_estimator=200,max_features=auto) as the best Random Forest Model.
 
 <strong> 2. Natural Language Processing-Deep Learning Model</strong>
+
 Initial Model: <br>
 We started the model with 2 hidden layers and 100 neurons on each hidden layer, with epochs = 100 and . This first NPL model was scored 0.8896. This is a higher score than the best Random Forest by 0.0143. This is an improvement. However, this model is much more time consuming and requires more computational power. 
 
